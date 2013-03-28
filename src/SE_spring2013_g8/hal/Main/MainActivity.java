@@ -1,8 +1,10 @@
 package SE_spring2013_g8.hal.Main;
 
-import SE_spring2013_g8.hal.R;
-import android.os.Bundle;
+import SE_spring2013_g8.hal.*;
+import SE_spring2013_g8.hal.Lights.LightControl;
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
@@ -26,6 +28,10 @@ public class MainActivity extends Activity {
 	    gridview.setOnItemClickListener(new OnItemClickListener() {
 	        public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
 	            Toast.makeText(MainActivity.this, "" + position, Toast.LENGTH_SHORT).show();
+	            if (position == 7) {
+	            	Intent intent = new Intent(MainActivity.this, LightControl.class);
+	            	startActivity(intent);
+	            }
 	        }
 
 			

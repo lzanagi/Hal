@@ -4,5 +4,10 @@
     <string name="app_name">Hal</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_light_control">LightControl</string>
+    <string name="Light_control_title">Light Control</string>
+    <string name="Light_on">On</string>
+    <string name="Light_off">Off</string>
+    <string name="title_activity_comms_thread">CommsThread</string>
 
 </resources>
