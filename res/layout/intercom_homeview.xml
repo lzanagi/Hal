@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/broadcast"
+        android:layout_marginTop="100dp"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:text="@string/broadcast"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/conf"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:text="@string/p2p"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/p2p"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+       	android:layout_gravity="center_vertical|center"
+        android:text="@string/Conf"
+        android:textAlignment="center" />
+
+</LinearLayout>

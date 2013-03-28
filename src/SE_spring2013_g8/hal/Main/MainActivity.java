@@ -1,6 +1,7 @@
 package SE_spring2013_g8.hal.Main;
 
 import SE_spring2013_g8.hal.*;
+import SE_spring2013_g8.hal.Intercom.HomeView;
 import SE_spring2013_g8.hal.Lights.LightControl;
 import android.app.Activity;
 import android.content.Intent;
@@ -18,9 +19,6 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		//super.onCreate(savedInstanceState);
-	    //setContentView(R.layout.main);
 
 	    GridView gridview = (GridView) findViewById(R.id.gridview);
 	    gridview.setAdapter(new ImageAdapter(this));
@@ -32,20 +30,16 @@ public class MainActivity extends Activity {
 	            	Intent intent = new Intent(MainActivity.this, LightControl.class);
 	            	startActivity(intent);
 	            }
+	            if(position ==6){
+	            	Intent intent = new Intent(MainActivity.this, HomeView.class);
+	            	startActivity(intent);
+	            }
 	        }
 
 			
 	    });
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-		
-		
-	}
 
 	
 	
