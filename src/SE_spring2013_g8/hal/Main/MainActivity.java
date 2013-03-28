@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
 	            	Intent intent = new Intent(MainActivity.this, LightControl.class);
 	            	startActivity(intent);
 	            }
-	            if(position ==6){
+	            if(position ==5){
 	            	Intent intent = new Intent(MainActivity.this, HomeView.class);
 	            	startActivity(intent);
 	            }
