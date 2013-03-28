@@ -1,6 +1,6 @@
 package SE_spring2013_g8.hal.Main;
 
-import ece.rutgers.edu.se_spring2013.R;
+import SE_spring2013_g8.hal.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;

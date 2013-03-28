@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package ece.rutgers.edu.se_spring2013;
+package SE_spring2013_g8.hal;
 
 public final class R {
     public static final class attr {
@@ -24,7 +24,8 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int action_settings=0x7f080001;
+        public static final int gridview=0x7f080000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
