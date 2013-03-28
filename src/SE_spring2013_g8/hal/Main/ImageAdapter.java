@@ -48,7 +48,7 @@ public class ImageAdapter extends BaseAdapter {
     private Integer[] mThumbIds = {
             R.drawable.ic_launcher, R.drawable.ic_launcher,R.drawable.ic_launcher,
             R.drawable.ic_launcher,R.drawable.ic_launcher,R.drawable.ic_launcher,
-            R.drawable.ic_launcher,R.drawable.lightcontrolicon,R.drawable.ic_launcher
+            R.drawable.surveillanceicon,R.drawable.lightcontrolicon,R.drawable.ic_launcher
     };
 
 	
