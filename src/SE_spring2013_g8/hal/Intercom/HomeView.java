@@ -18,21 +18,19 @@ public class HomeView extends Activity {
 	public void gotoBroadcastView(View view) {
 	   
 		Intent intent = new Intent(this, BroadcastView.class);
-	    
 	    startActivity(intent);
 	}
 	
 	
 	public void gotoP2PView(View view) {
 		Intent intent = new Intent(this, P2PView.class);
-	    
 	    startActivity(intent);
 	}
 	
 	
 	public void gotoConferenceView(View view) {
+		
 		Intent intent = new Intent(this, ConferenceView.class);
-	    
 	    startActivity(intent);
 	}
 }
