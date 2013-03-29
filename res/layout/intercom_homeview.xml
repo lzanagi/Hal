@@ -7,11 +7,12 @@
 
     <Button
         android:id="@+id/broadcast"
-        android:layout_marginTop="100dp"
         android:layout_width="153dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center"
-        android:text="@string/broadcast"
+        android:layout_marginTop="100dp"
+        android:onClick="gotoBroadcastView"
+        android:text="@string/intercom_home_broadcast"
         android:textAlignment="center" />
 
     <Button
@@ -19,7 +20,8 @@
         android:layout_width="153dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center"
-        android:text="@string/p2p"
+        android:text="@string/intercom_home_Conf"
+        android:onClick="gotoConferenceView"
         android:textAlignment="center" />
 
     <Button
@@ -27,7 +29,8 @@
         android:layout_width="153dp"
         android:layout_height="wrap_content"
        	android:layout_gravity="center_vertical|center"
-        android:text="@string/Conf"
+       	android:onClick="gotoP2PView"
+        android:text="@string/intercom_home_p2p"
         android:textAlignment="center" />
 
 </LinearLayout>

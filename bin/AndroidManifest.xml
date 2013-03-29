@@ -35,6 +35,37 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="SE_spring2013_g8.hal.Main.MainActivity" />
          </activity>
+         
+         <activity
+            android:name=".Intercom.BroadcastView"
+            android:label="Broadcast"
+            android:parentActivityName="SE_spring2013_g8.hal.Intercom.HomeView" >
+            
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="SE_spring2013_g8.hal.Intercom.HomeView" />
+         </activity>
+         
+         <activity
+            android:name=".Intercom.P2PView"
+            android:label="P2P Call"
+            android:parentActivityName="SE_spring2013_g8.hal.Intercom.HomeView" >
+            
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="SE_spring2013_g8.hal.Intercom.HomeView" />
+         </activity>
+         
+         <activity
+            android:name=".Intercom.ConferenceView"
+            android:label="Conference Call"
+            android:parentActivityName="SE_spring2013_g8.hal.Intercom.HomeView" >
+            
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="SE_spring2013_g8.hal.Intercom.HomeView" />
+         </activity>
+         
         <activity
             android:name=".Lights.LightControl"
             android:label="@string/title_activity_light_control"

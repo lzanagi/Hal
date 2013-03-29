@@ -10,8 +10,16 @@
     <string name="Light_off">Off</string>
     <string name="title_activity_comms_thread">CommsThread</string>
     
-    <string name="broadcast">Broadcast</string>
-    <string name="p2p">P2P Call</string>
-    <string name="Conf">Coneference Call</string>
+    <string name="intercom_home_broadcast">Broadcast</string>
+    <string name="intercom_home_p2p">P2P Call</string>
+    <string name="intercom_home_Conf">Conference Call</string>
+    <string name="intercom_broadcast_chronometer">Chronometer</string>
+    <string name="intercom_broadcast_start">Start</string>
+    <string name="intercom_broadcast_stop">Stop</string>
+    <string name="intercom_p2p_call">Call</string>
+    <string name="intercom_p2p_cancel">Cancel</string>
+    <string name="intercom_conference_call">Call</string>
+    <string name="intercom_conference_cancel">Cancel</string>
+   
 
 </resources>
