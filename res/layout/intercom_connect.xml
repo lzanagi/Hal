@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp" />
-
+<!-- 
     <android.support.v7.widget.GridLayout
         android:id="@+id/GridView1"
         android:layout_width="wrap_content"
@@ -67,5 +67,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         app:layout_gravity="center" />
-
+ -->
 </LinearLayout>
