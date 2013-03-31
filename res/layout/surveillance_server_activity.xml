@@ -5,12 +5,14 @@
     android:orientation="vertical" >
     
     <TextView
-        android:text="This is the Server Activity!"
-        android:layout_width="fill_parent"
+		android:text="Video Viewer Status:"
+		android:textSize="24dp"
+		android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
     
     <TextView
 		android:id="@+id/server_status"
+		android:textSize="24dp"
 		android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
     

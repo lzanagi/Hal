@@ -3,6 +3,7 @@ package SE_spring2013_g8.hal.Surveillance;
 import SE_spring2013_g8.hal.R;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -12,6 +13,7 @@ public class SurveillanceMainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 		setContentView(R.layout.surveillance_activity_main);
 	}
 

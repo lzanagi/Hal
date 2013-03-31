@@ -12,6 +12,7 @@ import java.util.Enumeration;
 
 import SE_spring2013_g8.hal.R;
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.ImageFormat;
@@ -38,6 +39,7 @@ public class ServerActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.surveillance_server_activity);
         serverStatus = (TextView) findViewById(R.id.server_status);
         mMediaPlayer = new MediaPlayer();    

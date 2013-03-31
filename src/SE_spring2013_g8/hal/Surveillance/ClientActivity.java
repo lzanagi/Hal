@@ -10,6 +10,7 @@ import java.util.Date;
 
 import SE_spring2013_g8.hal.R;
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
 import android.hardware.Camera;
 import android.hardware.Camera.PreviewCallback;
 import android.media.CamcorderProfile;
@@ -57,6 +58,7 @@ public class ClientActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.surveillance_client_activity);
         
         //serverIp = (EditText) findViewById(R.id.server_ip);
@@ -69,7 +71,8 @@ public class ClientActivity extends Activity {
         FrameLayout preview = (FrameLayout) findViewById(R.id.camera_preview);
         preview.addView(mPreview);
 	    
-		// Add a listener to the Capture button
+		/*
+        // Add a listener to the Capture button
 		final Button captureButton = (Button) findViewById(R.id.button_capture);
 		captureButton.setOnClickListener(
 		    new View.OnClickListener() {
@@ -82,8 +85,7 @@ public class ClientActivity extends Activity {
 		                mCamera.lock();         // take camera access back from MediaRecorder
 		                
 		                // inform the user that recording has stopped
-		                //setCaptureButtonText("Capture");
-		                captureButton.setText("Capture");
+		                captureButton.setText("Start video capture storage");
 		                isRecording = false;
 		            } else {
 		                // initialize video camera
@@ -93,8 +95,7 @@ public class ClientActivity extends Activity {
 		                    mMediaRecorder.start();
 
 		                    // inform the user that recording has started
-		                    //setCaptureButtonText("Stop");
-		                    captureButton.setText("Stop");
+		                    captureButton.setText("Stop video capture storage");
 		                    isRecording = true;
 		                } else {
 		                    // prepare didn't work, release the camera
@@ -104,7 +105,7 @@ public class ClientActivity extends Activity {
 		            }
 		        }
 		    }
-		);
+		); */
     }
     
     private OnClickListener connectListener = new OnClickListener() {
@@ -316,14 +317,5 @@ public class ClientActivity extends Activity {
             mCamera.release();        // release the camera for other applications
             mCamera = null;
         }
-    }
-    
-    protected void onDestroy() {
-    	try {
-			socket.close();
-		} catch (IOException e) {
-			Log.e(TAG, "onDestroy() socket.close() failed" + e.getLocalizedMessage());
-			e.printStackTrace();
-		}
     }
 }

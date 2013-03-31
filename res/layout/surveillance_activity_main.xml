@@ -12,20 +12,23 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Select what you would like to launch:" />
+        android:text="Select what you would like to launch:"
+        android:textSize="24dp" />
     
     <Button
         android:id="@+id/launch_client"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Launch Client Activity"
+        android:text="Launch a surveillance video source"
+        android:textSize="24dp"
         android:onClick="onClickClient" />
     
     <Button
         android:id="@+id/launch_server"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Launch Server Activity"
+        android:text="Launch the surveillance video viewer"
+        android:textSize="24dp"
         android:onClick="onClickServer" />"
         
 
