@@ -6,7 +6,7 @@
     android:orientation="vertical" >
 
     <Button
-        android:id="@+id/broadcast"
+        android:id="@+id/intercom_broadcast"
         android:layout_width="153dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center"
@@ -16,7 +16,7 @@
         android:textAlignment="center" />
 
     <Button
-        android:id="@+id/conf"
+        android:id="@+id/intercom_conf"
         android:layout_width="153dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center"
@@ -25,7 +25,7 @@
         android:textAlignment="center" />
 
     <Button
-        android:id="@+id/p2p"
+        android:id="@+id/intercom_p2p"
         android:layout_width="153dp"
         android:layout_height="wrap_content"
        	android:layout_gravity="center_vertical|center"

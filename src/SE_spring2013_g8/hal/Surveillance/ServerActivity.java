@@ -27,7 +27,6 @@ import android.widget.TextView;
 public class ServerActivity extends Activity {
 
     private TextView serverStatus;
-    
     public static String SERVERIP = "10.0.2.15"; // default ip
     public static final int SERVERPORT = 8080; // designate a port
     private Handler handler = new Handler();

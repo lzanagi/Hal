@@ -16,6 +16,8 @@
     <string name="intercom_broadcast_chronometer">Chronometer</string>
     <string name="intercom_broadcast_start">Start</string>
     <string name="intercom_broadcast_stop">Stop</string>
+    <string name="intercom_broadcast_announcement">Annoucement from [Device ID]</string>
+    <string name="intercom_callerName">Call from [Device ID]</string>
     <string name="intercom_p2p_call">Call</string>
     <string name="intercom_p2p_cancel">Cancel</string>
     <string name="intercom_conference_call">Call</string>

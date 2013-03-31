@@ -14,9 +14,10 @@
         tools:ignore="NewApi" />
 
     <Chronometer
-        android:id="@+id/chronometer1"
+        android:id="@+id/broadcastTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
         android:text="@string/intercom_broadcast_chronometer" />
@@ -29,14 +30,15 @@
         tools:ignore="NewApi" >
 
         <Button
-            android:id="@+id/start_button"
+            android:id="@+id/intercom_broadcast_startbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
+            android:onClick="gotoAnnouncement"
             android:text="@string/intercom_broadcast_start" />
 
         <Button
-            android:id="@+id/stop_button"
+            android:id="@+id/intercom_broadcast_stopbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right|top"
