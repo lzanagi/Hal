@@ -8,28 +8,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".SurveillanceMainActivity"
     android:orientation="vertical"  >
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Select what you would like to launch:"
-        android:textSize="24dp" />
-    
-    <Button
-        android:id="@+id/launch_client"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Launch a surveillance video source"
-        android:textSize="24dp"
-        android:onClick="onClickClient" />
-    
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Select what you would like to launch:"
+	        android:textSize="24sp" />
+	    <Button
+	        android:id="@+id/launch_client"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Launch a surveillance video source"
+	        android:textSize="24sp"
+	        android:onClick="onClickClient" />
     <Button
         android:id="@+id/launch_server"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Launch the surveillance video viewer"
-        android:textSize="24dp"
+        android:textSize="24sp"
         android:onClick="onClickServer" />"
-        
-
 </LinearLayout>

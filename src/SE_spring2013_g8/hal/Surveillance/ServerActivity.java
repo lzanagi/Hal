@@ -10,6 +10,8 @@ import java.net.Socket;
 import java.net.SocketException;
 import java.util.Enumeration;
 
+import org.apache.http.conn.util.InetAddressUtils;
+
 import SE_spring2013_g8.hal.R;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
@@ -64,6 +66,7 @@ public class ServerActivity extends Activity {
                     handler.post(new Runnable() {
                         @Override
                         public void run() {
+                        	
                             serverStatus.setText("Listening on IP: " + SERVERIP);
                         }
                     });
@@ -160,7 +163,12 @@ public class ServerActivity extends Activity {
                 NetworkInterface intf = en.nextElement();
                 for (Enumeration<InetAddress> enumIpAddr = intf.getInetAddresses(); enumIpAddr.hasMoreElements();) {
                     InetAddress inetAddress = enumIpAddr.nextElement();
-                    if (!inetAddress.isLoopbackAddress()) { return inetAddress.getHostAddress().toString(); }
+
+                    //IPv4:
+                    if (!inetAddress.isLoopbackAddress()    && InetAddressUtils.isIPv4Address(inetAddress.getHostAddress())   ) { return inetAddress.getHostAddress().toString(); }
+                    
+                    //IPv6:
+                    //if (!inetAddress.isLoopbackAddress()    && InetAddressUtils.isIPv4Address(ipv4 = inetAddress.getHostAddress())   ) { return inetAddress.getHostAddress().toString(); }
                 }
             }
         } catch (SocketException ex) {

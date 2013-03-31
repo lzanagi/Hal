@@ -23,13 +23,15 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
 public class ClientActivity extends Activity {
 
-    //private EditText serverIp;
-	private String serverIp = "192.168.1.148";
+    private EditText serverIpEditText;
+	private String serverIp = "";
+	//private String serverIp = "192.168.1.148";
     private Button connectPhones;
     private String serverIpAddress = "";
     private boolean connected = false;
@@ -61,7 +63,7 @@ public class ClientActivity extends Activity {
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.surveillance_client_activity);
         
-        //serverIp = (EditText) findViewById(R.id.server_ip);
+        serverIpEditText = (EditText) findViewById(R.id.server_ip);
         connectPhones = (Button) findViewById(R.id.connect_phones);
         connectPhones.setOnClickListener(connectListener);
         
@@ -106,6 +108,41 @@ public class ClientActivity extends Activity {
 		        }
 		    }
 		); */
+        
+        // Add a listener to the Capture button
+		final Button captureButton = (Button) findViewById(R.id.button_capture);
+		captureButton.setOnClickListener(
+		    new View.OnClickListener() {
+		        @Override
+		        public void onClick(View v) {
+		            if (isRecording) {
+		            	// stop recording and release camera
+		                mMediaRecorder.stop();  // stop the recording
+		                releaseMediaRecorder(); // release the MediaRecorder object
+		                mCamera.lock();         // take camera access back from MediaRecorder
+		                
+		                // inform the user that recording has stopped
+		                captureButton.setText("Start video capture storage");
+		                isRecording = false;
+		            } else {
+		                // initialize video camera
+		                if (prepareVideoRecorder()) {
+		                    // Camera is available and unlocked, MediaRecorder is prepared,
+		                    // now you can start recording
+		                    mMediaRecorder.start();
+
+		                    // inform the user that recording has started
+		                    captureButton.setText("Stop video capture storage");
+		                    isRecording = true;
+		                } else {
+		                    // prepare didn't work, release the camera
+		                    releaseMediaRecorder();
+		                    // inform user
+		                }
+		            }
+		        }
+		    }
+		);
     }
     
     private OnClickListener connectListener = new OnClickListener() {
@@ -113,7 +150,8 @@ public class ClientActivity extends Activity {
         @Override
         public void onClick(View v) {
             if (!connected) {
-                serverIpAddress = serverIp;
+                //serverIpAddress = serverIp;
+            	serverIpAddress = serverIpEditText.getText().toString();
                 if (!serverIpAddress.equals("")) {
                     Thread cThread = new Thread(new ClientThread());
                     cThread.start();
