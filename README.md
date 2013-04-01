@@ -12,7 +12,7 @@ Blinds:
 
 Idle Activity:
 
-Emergency lighting:
+Emergency lighting: Torchlight for power outages.
 
 Intercom: A sub system that functions as a peer to peer video and audio calling system as well as voice broadcast.
 
