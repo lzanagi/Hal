@@ -119,6 +119,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="SE_spring2013_g8.hal.Main.MainActivity" />
         </activity>
+        
+        
 
         <activity
             android:name=".Surveillance.SurveillanceMainActivity"

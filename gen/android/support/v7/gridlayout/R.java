@@ -43,8 +43,8 @@ public final class R {
 		public static final int GridLayout_Layout_android_layout_marginTop = 4;
 		public static final int GridLayout_rowOrderPreserved = 5;
 		public static final int GridLayout_Layout_android_layout_marginBottom = 6;
-		public static final int GridLayout_Layout_android_layout_height = 1;
 		public static final int GridLayout_Layout_android_layout_marginLeft = 3;
+		public static final int GridLayout_Layout_android_layout_height = 1;
 		public static final int GridLayout_Layout_android_layout_margin = 2;
 		public static final int GridLayout_Layout_android_layout_marginRight = 5;
 		public static final int GridLayout_rowCount = 1;

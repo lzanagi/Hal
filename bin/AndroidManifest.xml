@@ -119,10 +119,19 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="SE_spring2013_g8.hal.Main.MainActivity" />
         </activity>
+        
+        <activity
+            android:name=".audio.audio_home"
+            android:label="audio_layout"
+            android:parentActivityName="SE_spring2013_g8.hal.Main.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="SE_spring2013_g8.hal.Main.MainActivity" />
+        </activity>
 
         <activity
             android:name=".Surveillance.SurveillanceMainActivity"
-            android:label="Main Activity" >
+            android:label="Surveillance - Home Screen" >
             <intent-filter>
                 <action android:name=".Surveillance.SurveillanceMainActivity" />
                 <category android:name="android.intent.category.Defailt" />
@@ -131,7 +140,7 @@
         
         <activity
             android:name=".Surveillance.ClientActivity"
-            android:label="Client Activity" >
+            android:label="Surveillance - Video Source Screen" >
             <intent-filter>
                 <action android:name=".Surveillance.ClientActivity" />
                 <category android:name="android.intent.category.Default" />
@@ -140,7 +149,7 @@
         
 		<activity
             android:name=".Surveillance.ServerActivity"
-            android:label="Server Activity" >
+            android:label="Surveillance - Video View Screen" >
             <intent-filter>
                 <action android:name=".Surveillance.ServerActivity" />
                 <category android:name="android.intent.category.Default" />

@@ -4,6 +4,7 @@ import SE_spring2013_g8.hal.*;
 import SE_spring2013_g8.hal.Intercom.HomeView;
 import SE_spring2013_g8.hal.Lights.LightControl;
 import SE_spring2013_g8.hal.Surveillance.SurveillanceMainActivity;
+import SE_spring2013_g8.hal.audio.audio_home;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -36,6 +37,10 @@ public class MainActivity extends Activity {
 	            }
 	            if (position == 6) {
 	            	Intent intent = new Intent(MainActivity.this, SurveillanceMainActivity.class);
+	            	startActivity(intent);
+	            }
+	            if (position == 3) {
+	            	Intent intent = new Intent(MainActivity.this, audio_home.class);
 	            	startActivity(intent);
 	            }
 	        }
